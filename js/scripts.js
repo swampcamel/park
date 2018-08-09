@@ -5,9 +5,10 @@ $(function() {
     console.log(hInput);
     if (hInput < 52) {
       $('.short').show();
-
-    } else {
+    } else if (hInput > 70) {
       $('.tall, .short').show();
+    } else {
+      $('.tall, .short, .tootall').show();
     }
   });
 });
